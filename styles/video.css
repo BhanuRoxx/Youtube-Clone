@@ -1,25 +1,9 @@
 .grid-all{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 40px;}
-
-  @media(max-width:700px){
-    .grid-all{
-      display: grid;
-      grid-template-columns: 1fr 1fr ;
-      column-gap: 16px;
-      row-gap: 40px;}
-  }
-  @media(min-width:699px) and (max-width:1539px){
-        .grid-all{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr ;
-          column-gap: 16px;
-          row-gap: 40px;}
-      }
-
-      @media (min-width:1540px) {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 20px;}
+   
+         @media (min-width:961px) {
         .grid-all{
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
